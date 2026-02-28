@@ -1,0 +1,99 @@
+body {
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: left;  /* Justificado pro texto fluir */
+    background: #ffffff;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.7;
+}
+
+* {
+    box-sizing: border-box;  /* Essencial! */
+    padding: 0;              /* 2% bagunça tudo */
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 3.0rem;     /* 45px responsivo */
+    margin-bottom: 0;
+    font-family: Georgia;
+    background-color: #ecc8ff;
+    
+}
+
+h3 {
+    text-align: center;
+    color: #3a08a7;
+    font-size: 1.5rem;
+    font-family:'Times New Roman';
+    margin-bottom: 15px;
+    opacity: 50%;
+}
+
+h4 {
+    font-size: 1.4rem;     /* 22px, NÃO 15! */
+    color: #000000;
+    margin: 30px 0 15px;
+    border-left: 5px solid #9f7aea;
+    padding-left: 15px;
+}
+h5{
+    text-align: center;
+    font-size: 2ch;
+    font-family:Georgia;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: justify;   
+}
+.lado-lado {
+    display: flex;             /* Lado a lado */
+    gap: 20px;                 /* Espaço entre img/texto */
+    align-items: flex-start;   /* Alinha topo */
+    margin: 20px 0;
+}
+
+.lado-lado img {
+    width: 20ch;
+    height: 30ch;
+    border-radius: 5ch;
+    flex-shrink: 0;            /* Imagem não encolhe */
+}
+
+@media (max-width: 768px) {
+    .lado-lado { flex-direction: column; }  /* Empilha no celular */
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+th {
+    background: rgb(149, 147, 206);
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: #f7fafc;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    body { margin: 10px; padding: 10px; }
+}
