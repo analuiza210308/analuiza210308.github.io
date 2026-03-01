@@ -1,16 +1,46 @@
+css
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background: #f8f9fa;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3a08a7;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #ecc8ff;
+}
+
 body {
     margin: 20px auto;
     max-width: 900px;
-    text-align: left;  /* Justificado pro texto fluir */
+    text-align: left;
     background: #ffffff;
     font-family: 'Segoe UI', Tahoma, sans-serif;
     line-height: 1.7;
-}
-
-* {
-    box-sizing: border-box;  /* Essencial! */
-    padding: 0;              /* 2% bagunça tudo */
-    margin: 0;
 }
 
 h1 {
@@ -18,11 +48,10 @@ h1 {
     color: rgb(0, 0, 0);
     padding: 10px;
     border-radius: 15px;
-    font-size: 3.0rem;     /* 45px responsivo */
+    font-size: 3.0rem;
     margin-bottom: 0;
     font-family: Georgia;
     background-color: #ecc8ff;
-    
 }
 
 h3 {
@@ -35,27 +64,29 @@ h3 {
 }
 
 h4 {
-    font-size: 1.4rem;     /* 22px, NÃO 15! */
+    font-size: 1.4rem;
     color: #000000;
     margin: 30px 0 15px;
     border-left: 5px solid #9f7aea;
     padding-left: 15px;
 }
-h5{
+
+h5 {
     text-align: center;
     font-size: 2ch;
-    font-family:Georgia;
+    font-family: Georgia;
 }
 
 p {
     font-size: 1.1rem;
     margin-bottom: 20px;
-    text-align: justify;   
+    text-align: justify;
 }
+
 .lado-lado {
-    display: flex;             /* Lado a lado */
-    gap: 20px;                 /* Espaço entre img/texto */
-    align-items: flex-start;   /* Alinha topo */
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
     margin: 20px 0;
 }
 
@@ -63,11 +94,13 @@ p {
     width: 20ch;
     height: 30ch;
     border-radius: 5ch;
-    flex-shrink: 0;            /* Imagem não encolhe */
+    flex-shrink: 0;
 }
 
 @media (max-width: 768px) {
-    .lado-lado { flex-direction: column; }  /* Empilha no celular */
+    .lado-lado { 
+        flex-direction: column; 
+    }
 }
 
 table {
@@ -92,7 +125,6 @@ tr:hover {
     background: #f7fafc;
 }
 
-/* Mobile */
 @media (max-width: 768px) {
     h1 { font-size: 2rem; }
     body { margin: 10px; padding: 10px; }
