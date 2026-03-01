@@ -83,26 +83,6 @@ p {
     text-align: justify;
 }
 
-.lado-lado {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    margin: 20px 0;
-}
-
-.lado-lado img {
-    width: 20ch;
-    height: 30ch;
-    border-radius: 5ch;
-    flex-shrink: 0;
-}
-
-@media (max-width: 768px) {
-    .lado-lado { 
-        flex-direction: column; 
-    }
-}
-
 table {
     width: 50%;
     border-collapse: collapse;
@@ -129,3 +109,4 @@ tr:hover {
     h1 { font-size: 2rem; }
     body { margin: 10px; padding: 10px; }
 }
+
